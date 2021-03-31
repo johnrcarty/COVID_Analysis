@@ -70,6 +70,9 @@ headers <- c("date"
 
 names(small) <- headers
 
+min(small$date) #2021-01-13
+max(small$date) #2021-03-30
+
 small$newcases <- small$cases - small$cases.priorDay
 small$newvaccine <- small$vaccinated - small$vaccinated.priorday
 names(small)
