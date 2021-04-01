@@ -98,7 +98,7 @@ max(small$date) #2021-03-30
 small$newcases <- small$cases - small$cases.priorDay
 small$newvaccine <- small$vaccinated - small$vaccinated.priorday
 names(small)
-final <- small[,c(1:5,7:11)]
+final <- small[,c(1:6,8:12)]
 final$cases.per100000 <- (final$cases/(as.numeric(final$POP))*100000)
 final$newcases.per100000 <- (final$newcases/(as.numeric(final$POP))*100000)
 final$vaccinated.per100000 <- (final$vaccinated/(as.numeric(final$POP))*100000)
@@ -108,8 +108,9 @@ names(final)
 # [4] "cases.priorDay"      "vaccinated.priorday" "newcases"           
 # [7] "newvaccine"  
 
-
+final2 <- final
 final <- subset(final, state==stateSelect)
+
 
 p1 <- ggplot(final, aes(x=date, y=newcases.per100000)) +
   geom_line(color="red") +
@@ -216,7 +217,7 @@ ggsave(
 )
 
 
-states <- final %>% 
+states <- final2 %>% 
   filter(state %in% c("California", "Texas", "Ohio", "Florida",   "New York", "Alabama", "North Dakota", "Louisiana", "New Jersey"))
   #filter(date > '2020-04-01')
 
