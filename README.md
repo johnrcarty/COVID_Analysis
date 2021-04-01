@@ -1,12 +1,19 @@
 Data was sourced from New York Times, Our World in Data, and US Census Bureau  
 Date range is 2021-01-13 to 2021-03-30 due to Vaccination data starting on 2021-01-13  
 
-Chart shows total cases and total vaccinations over time  
+Chart shows total cases and total vaccinations over time.   
 ![alt text](https://github.com/johnrcarty/covid_analysis/blob/master/casesAndVaccinations.png?raw=true)  
 
 Chart shows a regression analysis on Daily New Cases compared to Daily New Vaccinations.  
 ![alt text](https://github.com/johnrcarty/covid_analysis/blob/master/newCasesNewVaccine_regression.png?raw=true)  
 
+Comparing 9 States Daily New Cases per 100,000 people over 1 year.  
+![alt text](https://github.com/johnrcarty/covid_analysis/blob/master/9_StateDailyNewCases.png?raw=true)  
+
+Total Cases and Total Fully Vaccinated per 100,000 on the left axis.  
+Daily New Cases per 100,000 on the right axis.  
+Legend needs to be cleaned.  
+![alt text](https://github.com/johnrcarty/covid_analysis/blob/master/totalCasesAndVaccinations.png?raw=true)
 
 
 Sources  

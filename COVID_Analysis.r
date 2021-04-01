@@ -114,7 +114,7 @@ final <- subset(final, state==stateSelect)
 
 p1 <- ggplot(final, aes(x=date, y=newcases.per100000)) +
   geom_line(color="red") +
-  ggtitle(paste(abb, "COVID 19 Cases")) +
+  ggtitle(paste(abb, "Daily New COVID 19 Cases")) +
   xlab("Date") + ylab("Cases Per 100,000 People")+ 
   theme(
     plot.title = element_text(color="black", size=14, face="bold.italic",hjust = 0.5),
@@ -124,8 +124,8 @@ p1 <- ggplot(final, aes(x=date, y=newcases.per100000)) +
   
 p2 <- ggplot(final, aes(x=date, y=vaccinated.per100000)) +
   geom_line(color="#69b3a2")  +
-  ggtitle(paste(abb, "COVID 19 Vaccinations")) +
-  xlab("Date") + ylab("Vaccinations Per 100,000 People") + 
+  ggtitle(paste(abb, "COVID 19 Inoculation Count")) +
+  xlab("Date") + ylab("Number of people Inoculated Per 100,000") + 
   theme(
     plot.title = element_text(color="black", size=14, face="bold.italic",hjust = 0.5),
     axis.title.x = element_text(color="black", size=12),
